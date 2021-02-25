@@ -1,0 +1,130 @@
+
+.dropdown {  
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2% 30%;
+}
+
+@media screen and (min-width: 600px){
+  .dropdown {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .dropdown{
+  flex-direction: column;
+  align-items: center;
+  padding: 1.1rem;
+  }
+  .corner-button {
+    margin:1rem
+  }
+}
+
+.dropdown select {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.dropdown:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown select option {
+  padding: 30px;
+}
+
+.rowCols{
+  margin: 2% 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnDiv {
+  margin: 2% 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.pulse:active,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button:active, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: 4px solid #3e206d;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.inputCell
+{
+  font-weight: bold; 
+  height: 20px; 
+  width: 70px; 
+  border-radius:5px;
+  padding:5px;
+  background-color: #f1f1f6;
+  letter-spacing: 1px;
+}
