@@ -54,8 +54,10 @@
 .btnDiv {
   margin: 2% 25%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 
 .raise:hover,
 .raise:focus {
